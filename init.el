@@ -4,6 +4,9 @@
 ;; '(custom-enabled-themes (quote (Darkula))))
 ;; (custom-set-faces)
 ;; (put 'scroll-left 'disabled nil)
+(load-theme 'wombat)
+;;adwaita deeper-blue dichromacy light-blue manoj-dark misterioso tango tango-dark tsdh-dark tsdh-light wheatgrass whiteboard wombat
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
@@ -11,14 +14,16 @@
              '("melpa" . "http://melpa.milkbox.net/pacakges/"))
 (package-initialize)
 
+(line-number-mode 1)
+(column-number-mode 1)
+
 (defvar my-packages '(cider better-defaults find-file-in-project magit smex scpaste paredit idle-highlight-mode ido-ubiquitous rainbow-delimiters))
 
-(dolist (p my-packages)
+(Dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
 (require 'icomplete)
-
 (require 'smex)
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
