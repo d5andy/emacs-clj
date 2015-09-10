@@ -19,7 +19,7 @@
 
 (defvar my-packages '(cider better-defaults find-file-in-project magit smex scpaste paredit idle-highlight-mode ido-ubiquitous rainbow-delimiters))
 
-(Dolist (p my-packages)
+(dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
