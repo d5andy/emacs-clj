@@ -1,6 +1,6 @@
 /backups/
 /auto-save-list/
 /elpa-bk/
-/places
-/eshell
+places
+/eshell/
 *~

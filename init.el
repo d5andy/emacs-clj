@@ -32,6 +32,8 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+(load-file "~/.emacs.d/graphviz/graphviz-dot-mode.el")
+
 (add-to-list 'load-path "~/.emacs.d/direx/")
 (require 'direx)
 
